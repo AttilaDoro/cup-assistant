@@ -1,1 +1,0 @@
-import valami from './valami'

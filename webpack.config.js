@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 const config = {
-    entry: path.resolve(__dirname, './src/index.js'),
+    entry: path.resolve(__dirname, './src/index.jsx'),
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
@@ -10,11 +10,14 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
-                }
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['react'],
+                    },
+                },
             },
             {
                 test: /\.html$/,
