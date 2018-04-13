@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { addNewMatch } from '../actions'
+import { addNewMatch, removeMatchRow } from '../actions'
 import Matches from '../components/Matches'
 
 const mapStateToProps = ({ matches }) => ({
@@ -7,7 +7,8 @@ const mapStateToProps = ({ matches }) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    addNewMatch: matchId => dispatch(addNewMatch(matchId)),
+    addNewMatch: () => dispatch(addNewMatch()),
+    removeMatchRow: matchIndex => dispatch(removeMatchRow(matchIndex)),
 })
 
 export default connect(
