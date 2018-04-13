@@ -21,3 +21,9 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+export const ADD_NEW_MATCH = 'matches/ADD_NEW_MATCH'
+export const addNewMatch = matchId => ({
+  type: ADD_NEW_MATCH,
+  matchId
+})

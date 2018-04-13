@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AttilaDoro/cup-assistant#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
@@ -29,6 +30,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "html-loader": "^0.5.5",
