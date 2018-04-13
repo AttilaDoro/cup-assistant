@@ -1,16 +1,30 @@
 import React from 'react'
-import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
- 
-const App = ({ match: { params } }) => {
-  return (
-    <div>
-      <AddTodo />
-      <VisibleTodoList filter={params.filter || 'SHOW_ALL'} />
-      <Footer />
-    </div>
-  )
+import MatchesContainer from '../containers/MatchesContainer'
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <main role="main">
+        <div class="row my-5">
+          <div class="col">
+          </div>
+          <div class="col-6">
+          </div>
+          <div class="col">
+          </div>
+        </div>
+        <div class="row roboto">
+          <div class="col">
+          </div>
+          <div class="col-6">
+            <form>
+              <MatchesContainer />
+            </form>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </main>
+    )
+  }
 }
- 
-export default App

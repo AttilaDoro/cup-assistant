@@ -13,12 +13,12 @@
         .roboto {
             font-family: 'Roboto', sans-serif;
         }
-        
+
         .oswald {
             font-family: 'Oswald', sans-serif;
             font-size: 0.9em;
         }
-        
+
         body {
             background: url(background.jpg) no-repeat;
             -webkit-background-size: cover;
@@ -26,70 +26,71 @@
             -o-background-size: cover;
             background-size: cover;
         }
-        
+
         .bottom-border {
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
-        
+
         .bottom-white {
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .transparent-bg {
             background-color: rgba(10, 10, 10, 0.5) !important;
         }
-        
+
         .transparent-navbar {
             background-color: rgba(25, 25, 25, 1) !important;
         }
+
         .title {
-            color: rgba(255,175,0,1);
+            color: rgba(255, 175, 0, 1);
         }
+
         .redefined-warning {
             color: #ffffff;
-            background-color: rgba(255,150,0,1);
+            background-color: rgba(255, 150, 0, 1);
             border-color: #ffc107;
         }
+
         .redefined-warning:hover {
             color: #ffffff;
             background-color: #e08100;
             border-color: #d37d00;
         }
-        .redefined-warning:focus, .redefined-warning.focus {
+
+        .redefined-warning:focus,
+        .redefined-warning.focus {
             box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
         }
 
-        .redefined-warning.disabled, .redefined-warning:disabled {
+        .redefined-warning.disabled,
+        .redefined-warning:disabled {
             color: #212529;
             background-color: #ffc107;
             border-color: #ffc107;
         }
 
-        .redefined-warning:not(:disabled):not(.disabled):active, .redefined-warning:not(:disabled):not(.disabled).active,
-        .show > .redefined-warning.dropdown-toggle {
+        .redefined-warning:not(:disabled):not(.disabled):active,
+        .redefined-warning:not(:disabled):not(.disabled).active,
+        .show>.redefined-warning.dropdown-toggle {
             color: #212529;
             background-color: #d39e00;
             border-color: #c69500;
         }
 
-        .redefined-warning:not(:disabled):not(.disabled):active:focus, .redefined-warning:not(:disabled):not(.disabled).active:focus,
-        .show > .redefined-warning.dropdown-toggle:focus {
+        .redefined-warning:not(:disabled):not(.disabled):active:focus,
+        .redefined-warning:not(:disabled):not(.disabled).active:focus,
+        .show>.redefined-warning.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-4 offset-md-1">
-                <div id="root"></div>
-            </div>
-        </div>
-    </div>
+    <div id="root"></div>
 </body>
 
 </html>

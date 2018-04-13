@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 import MatchRow from './MatchRow'
 
 export default class Matches extends React.Component {
-    handleClick = () => this.props.addNewMatch(5)
+    handleClick = (e) => {
+        e.preventDefault()
+        this.props.addNewMatch(5)
+    }
     render() {
         const { matches } = this.props
         return (
