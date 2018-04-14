@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default class PointForKillRow extends React.Component {
-    handleChange = (e) => this.props.updatePointsForKillValue(e.target.value)
+    handleChange = (e) => this.props.updatePointsForKillValue(parseInt(e.target.value, 10))
     render() {
         const { pointForKill } = this.props
         return (
