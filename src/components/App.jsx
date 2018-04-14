@@ -1,5 +1,6 @@
 import React from 'react'
 import MatchesContainer from '../containers/MatchesContainer'
+import PointsContainer from '../containers/PointsContainer'
 
 export default class App extends React.Component {
   render() {
@@ -19,6 +20,7 @@ export default class App extends React.Component {
           <div class="col-6">
             <form>
               <MatchesContainer />
+              <PointsContainer />
             </form>
           </div>
           <div class="col">

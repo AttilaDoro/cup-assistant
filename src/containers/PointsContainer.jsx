@@ -1,12 +1,13 @@
 import { connect } from 'react-redux'
+import { updatePointsForKillValue } from '../actions'
 import Points from '../components/Points'
 
-const mapStateToProps = ({ matches }) => ({
-    matches,
+const mapStateToProps = ({ points }) => ({
+    points,
 })
 
 const mapDispatchToProps = dispatch => ({
-    toggleTodo: id => dispatch(toggleTodo(id))
+    updatePointsForKillValue: killValue => dispatch(updatePointsForKillValue(killValue))
 })
 
 export default connect(

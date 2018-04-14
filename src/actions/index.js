@@ -8,3 +8,9 @@ export const removeMatchRow = matchIndex => ({
   type: REMOVE_MATCH_ROW,
   matchIndex,
 })
+
+export const UPDATE_POINTS_FOR_KILL_VALUE = 'points/UPDATE_POINTS_FOR_KILL_VALUE'
+export const updatePointsForKillValue = killValue => ({
+  type: UPDATE_POINTS_FOR_KILL_VALUE,
+  killValue,
+})
